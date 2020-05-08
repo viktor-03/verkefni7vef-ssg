@@ -1,0 +1,119 @@
+.container {
+    max-width: 70em;
+    margin: auto;
+    margin-top: 3em;
+}
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.headcol-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.col-3-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+.ad{
+    display: inline-block;
+    padding: .5em;
+    border-radius: .4em;
+    box-shadow: inset 0 0 3em green;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    white-space: nowrap;
+    background-color: greenyellow;
+  }
+  .innihald{
+    display: inline;
+    background-color: greenyellow;
+  }
+  .body{
+    background-color: black;
+  }
+  #logo {
+    position: relative;
+    animation:logo 5000ms infinite;
+    animation-timing-function: linear; 
+  }
+  @keyframes logo {
+    from {
+        transform:rotate(0deg);
+        left: 4%;
+    }
+    to {
+        transform:rotate(360deg);
+        left:4%;
+    }
+  }
+  .join{
+    position: relative;
+    animation: kvikun 1s forwards;
+    padding: .5em;
+    border-radius: .4em;
+    white-space: nowrap;
+  }
+  @keyframes kvikun {
+        0% { transform: translateY(0.9em);
+            right: -10%; }
+        100% { transform: translateY(-0.9em); 
+            right: -10%; }
+    }
+
+  .logoTexti {
+    animation:logoTexti 6s forwards;
+    position: relative;
+  }
+  @keyframes logoTexti {
+    0% {
+    right: -100%;
+    }
+    100% {
+    right: -7%;
+    }
+  }
+  @media screen and (min-width: 37.5em) {
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+    @keyframes kvikun {
+      0% { transform: translateY(40px);
+          right: -23%; }
+      100% { transform: translateY(-35px); 
+          right: -23%; }
+  }
+}
+// fartölvur
+@media screen and (min-width: 60em) {
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+    }
+}
+

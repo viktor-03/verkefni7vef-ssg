@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic@6.5.0/picnic.min.css"-->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>My Recipes</title>
+</head>
+<body class="container">
+    <header class="headcol-2">
+        <div>
+            <a href="index.html">
+                <img src="svg/my-recipes.svg">
+            </a>
+        </div>
+        <nav class="topnav">
+            <ul class="topmenu">
+                <li><a href="bread.html" class="virkur"><span class="icon-bread"></span> Bread</a></li>
+                <li><a href="#"><span class="icon-starters"></span> Starters</a></li>
+                <li><a href="#"><span class="icon-maincourses"></span> Main Courses</a></li>
+                <li><a href="#"> <span class="icon-desserts"></span> Desserts</a></li>
+                <li><a href="#"><span class="icon-glass"></span> Drinks</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %} {% endblock %}
+    {% include "socialButts.html" %}
+</body>
+</html>

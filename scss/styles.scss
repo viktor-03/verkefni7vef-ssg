@@ -1,0 +1,65 @@
+body {
+    background-color: bisque;
+}
+
+.mybutton {
+    background: #ff7777;
+    font-size: 0.75em;
+}
+.card {
+//   @include bradius5;
+    background-color: #fff;
+    border-radius: -5px 10px 10 px;
+    padding: 1em;
+}
+
+.litur{
+    background-color: lime;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.stretch {
+    display: grid;
+    align-items: stretch;
+}
+.topmenu a {
+    display: block;
+    padding: .9em 1em;
+    color: #592550;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+}
+.topmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+@media screen and (min-width: 37.5em) {
+.topmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+}
+@import 'layout', 'icomoon','socialButts';

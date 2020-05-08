@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/icomoon.min.css">
+    <title>My Recipes</title>
+</head>
+<body class="container">
+    <header class="headcol-2">
+        <div>
+            <h4><em>With a little help from my friends</em></h4>
+        </div>
+        <nav class="topnav">
+            <ul class="topmenu">
+                <li><a href="bread.html"><span class="icon-bread"></span> Bread</a></li>
+                <li><a href="#"><span class="icon-starters"></span> Starters</a></li>
+                <li><a href="#"><span class="icon-maincourses"></span> Main Courses</a></li>
+                <li><a href="#"> <span class="icon-desserts"></span> Desserts</a></li>
+                <li><a href="#"><span class="icon-glass"></span> Drinks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="col-3-1">
+        <div class="splashlogo">
+            <img src="svg/my-recipes.svg" title="myrecipes lógó">
+        </div>
+        <div><p>Placeholder fyrir text</p></div>
+    </section>
+        <div class="ad">
+            {% include "ad.html" %}
+        </div>
+        <table class="litur">
+            <caption>Free Recipes</caption>
+            <thead>
+                <tr> 
+                    <th scope="col"> </th>
+                    <th scope="col">Bread</th>
+                    <th scope="col">Starters</th>
+                    <th scope="col">Main Courses</th>
+                    <th scope="col">Desserts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" data-label="Önn">Fast And Easy</td>
+                    <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
+                    <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
+                    <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
+                    <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Önn">Quality Recipes</td>
+                    <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
+                    <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
+                    <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
+                    <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Önn">Exotic Recipes</td>
+                    <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
+                    <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
+                    <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
+                    <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
+                </tr>
+            </tbody>
+        </table>
+    <div>
+        <figure class="col-4">
+            <img src="img/bread.jpg" title="bread">
+            <img src="img/FigHamStarter.jpg" title="starters">
+            <img src="img/Grilled-Buttermilk-Chicken.jpg" title="courses">
+            <img src="img/desserts-hero.jpg" title="desserts">
+        </figure>
+    </div>
+    </main>
+    <footer><p>&copy; tölvubraut Tækniskólans</p></footer>
+    {% include "socialButts.html" %}
+</body>
+</html>
+
+
+{# jinja birtir ekkert innan #}
+{#
+{% raw %}  RAW gerir jinja kóðann óvirkan en birtir html
+{% extends "frontpage.html" %}
+    {% block content %}
+    <main class="col-3">
+    {% for post in posts %}
+        <div class="stretch">
+            <article class="card">
+                <header>
+                    <img src="{{ post.thumbnail }}">
+                </header>
+                <main>
+                    <h2>{{ post.title }}</h2>
+                    <small>{{ post.date }}</small>
+                    <p>{{ post.summary}}</p>
+                    
+                    <a class="mybutt" href="posts/{{ post.slug }}.html">Recipe</a>
+                    
+                    {% set list_of_tags = post.tags.split(",") %}
+                    {% for tag in list_of_tags %}
+                        <button class="mytag">{{ tag }}</button>
+                    {% endfor %}
+                </main>
+            </article>
+        </div>
+    {% endfor %}
+    </main>
+    {% endblock %}
+{% endraw %}
+#}

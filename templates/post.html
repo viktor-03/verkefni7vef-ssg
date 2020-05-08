@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>{{post.title}}</h1>
+    <article class="col-2 card">
+    <div>
+        <small>{{post.date}}</small>
+            {{post.content}}
+        </p>
+    </div>
+    <div>
+        <img src="../{{ post.thumbnail }}">
+    </div>
+</article>
+
+{% endblock %}
