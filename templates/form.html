@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic@6.5.0/picnic.min.css"-->
+    
+    <main>
+        <section class="col-3-1">
+            <div class="card">
+                <form action="#" method="get" class="formid">
+                    <fieldset>
+                        <legend>Það sem þú þarft að gera er merkt*</legend>
+                        <label>
+                            <h3>My Recipes</h3>
+                            <textarea rows="5" name="text" autofocus></textarea>
+                        </label>
+                        <div class="col-2">
+                            <section>
+                                <label>
+                                    Tegund uppskriftar
+                                    <select name="fjöldi" max-width="10em" class="block">
+                                        <option value="0" selected>Veldu tegund</option>
+                                        <option value="1">Bread</option>
+                                        <option value="2">Starters</option>
+                                        <option value="3">Main Cousres</option>
+                                        <option value="4">Desserts</option>
+                                        <option value="5">Drink</option>
+                                    </select>
+                                </label><br>
+                                <label>
+                                    Linkur á uppskriftina (ef hann er til) 
+                                    <input type="url" name="url" placeholder="http:// or https://" class="block">
+                                </label>
+                                <br>
+                                Gefðu þessari uppskrift einkunn<br>
+                                <label><input type="radio" name="einkunn" value="easy"> &#11088; Easy recipe</label><br> 
+                                <label><input type="radio" name="einkunn" value="quality"> &#11088;&#11088; Quality recipe</label><br> 
+                                <label><input type="radio" name="einkunn" value="exotic"> &#11088;&#11088;&#11088; Exotic recipe</label></label>
+                            </section>
+                            <section>
+                                <label>
+                                    Nafn*
+                                    <input type="text" name="nafn" placeholder="Fullt nafn" required title="Vinsamlegast skráðu nafn" class="block">
+                                </label>
+                                <label>
+                                    Símanúmer*
+                                    <input type="tel" name="telephone" placeholder="123 4567" title="Aðein tölustafir eru leyfinlegir" required class="block">
+                                </label>
+                                <label>
+                                    Email*
+                                    <input type="email" name="email" placeholder="Alvöru email address" required class="block">
+                                    </label>
+                                <label>
+                                    Dagsetning*  
+                                    <input type="date" name="dagsetning" required class="block">
+                                </label>
+                            </section>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                               <label><input type="checkbox" name="save-me" value="saveme"> Skrá mig í My Recipes klúbbinn</label><br> 
+                               <label><input type="checkbox" name="send-me" value="sendme"> Láttu mig vita þegar uppskriftir eru gefnar út</label>
+                            </p>        
+                            <p>
+                                <em>Email-ið þitt verður ekki gefið út</em><br>
+                                <input type="submit" name="submit" value="Send">
+                            </p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

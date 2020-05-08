@@ -33,41 +33,51 @@
         <div class="ad">
             {% include "ad.html" %}
         </div>
-        <table class="litur">
-            <caption>Free Recipes</caption>
+        <table>
+            <caption>Uppáhalds réttir dagsins</caption>
             <thead>
-                <tr> 
-                    <th scope="col"> </th>
-                    <th scope="col">Bread</th>
-                    <th scope="col">Starters</th>
-                    <th scope="col">Main Courses</th>
-                    <th scope="col">Desserts</th>
-                </tr>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Bread</th>
+                <th scope="col">Starters</th>
+                <th scope="col">Main courses</th>
+                <th scope="col">Desserts</th>
+              </tr>
             </thead>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td><a href="form.html" class="form">Sentu okkur uppskrift</a></td>
+                <td colspan="2">Deildu uppskriftunum þínum</td>
+              </tr>
+              <tr>
+                <td colspan="5">Þessi vefsíða er vefsíðan til þess að leita að uppskriftunum. Þú getur skoðað allskonar rétti og eldað einhvern góðan rétt.</td>
+              </tr>
+            </tfoot>
             <tbody>
-                <tr>
-                    <td scope="row" data-label="Önn">Fast And Easy</td>
-                    <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
-                    <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
-                    <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
-                    <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
-                </tr>
-                <tr>
-                    <td scope="row" data-label="Önn">Quality Recipes</td>
-                    <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
-                    <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
-                    <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
-                    <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
-                </tr>
-                <tr>
-                    <td scope="row" data-label="Önn">Exotic Recipes</td>
-                    <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
-                    <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
-                    <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
-                    <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
-                </tr>
+              <tr>
+                <td scope="row" data-label="Difficulty">Fast and Easy</td>
+                <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
+                <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
+                <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
+                <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
+              <tr>
+                <td scope="row" data-label="Difficulty">Quality Recipes</td>
+                <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
+                <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
+                <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
+                <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
+              </tr>
+                <td scope="row" data-label="Difficulty">Exotic recipes</td>
+                <td scope="row" data-label="Önn">Exotic Recipes</td>
+                <td data-label="Forritun"><a href="https://www.thekitchn.com/easier-no-knead-bread-in-a-hurry-40653" target="_blank">BREAD</a></td>
+                <td data-label="Vefhönnun"><a href="https://www.bbcgoodfood.com/recipes/collection/dinner-party-starter" target="_blank">STARTER</a></td>
+                <td data-label="Gagnasöfn"><a href="https://www.tasteofhome.com/cooking-style/quick-recipes/quick-main-dish-recipes/" target="_blank">MAIN COURSE</a></td>
+                <td data-label="Tölvutækni"><a href="https://www.tasteofhome.com/collection/quick-and-easy-desserts/" target="_blank">DESSERTS</a></td>
+              </tr>
             </tbody>
-        </table>
+          </table>
     <div>
         <figure class="col-4">
             <img src="img/bread.jpg" title="bread">
